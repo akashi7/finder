@@ -11,85 +11,85 @@ import second from '../../../assets/two.jpg'
 export const childrenData = [
 
   {
-    id:1,
-    name:"John Doe",
+    id: 1,
+    name: "John Doe",
     imgSrc: first,
-    message:"Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
-    nationality:"Rwandan",
-    telephone:"0781273704",
-    location:"Kigali , nyarugenge"
+    message: "Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
+    nationality: "Rwandan",
+    telephone: "0781273704",
+    location: "Kigali , nyarugenge"
   },
   {
-    id:2,
-    name:"vava king",
+    id: 2,
+    name: "vava king",
     imgSrc: second,
-    message:"Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
-    nationality:"Rwandan",
-    telephone:"0781273704",
-    location:"Kigali , nyarugenge"
+    message: "Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
+    nationality: "Rwandan",
+    telephone: "0781273704",
+    location: "Kigali , nyarugenge"
   },
   {
-    id:3,
-    name:"dodo lea",
+    id: 3,
+    name: "dodo lea",
     imgSrc: third,
-    message:"Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
-    nationality:"Rwandan",
-    telephone:"0781273704",
-    location:"Kigali , nyarugenge"
+    message: "Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
+    nationality: "Rwandan",
+    telephone: "0781273704",
+    location: "Kigali , nyarugenge"
   },
   {
-    id:4,
-    name:"jojo poi",
+    id: 4,
+    name: "jojo poi",
     imgSrc: four,
-    message:"Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
-    nationality:"Rwandan",
-    telephone:"0781273704",
-    location:"Kigali , nyarugenge"
+    message: "Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
+    nationality: "Rwandan",
+    telephone: "0781273704",
+    location: "Kigali , nyarugenge"
   },
   {
-    id:5,
-    name:"king akashi",
+    id: 5,
+    name: "king akashi",
     imgSrc: five,
-    message:"Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
-    nationality:"Rwandan",
-    telephone:"0781273704",
-    location:"Kigali , nyarugenge"
+    message: "Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
+    nationality: "Rwandan",
+    telephone: "0781273704",
+    location: "Kigali , nyarugenge"
   },
   {
-    id:6,
-    name:"dede lop",
+    id: 6,
+    name: "dede lop",
     imgSrc: six,
-    message:"Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
-    nationality:"Rwandan",
-    telephone:"0781273704",
-    location:"Kigali , nyarugenge"
+    message: "Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
+    nationality: "Rwandan",
+    telephone: "0781273704",
+    location: "Kigali , nyarugenge"
   },
   {
-    id:7,
-    name:"joseph levi",
+    id: 7,
+    name: "joseph levi",
     imgSrc: seven,
-    message:"Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
-    nationality:"Rwandan",
-    telephone:"0781273704",
-    location:"Kigali , nyarugenge"
+    message: "Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
+    nationality: "Rwandan",
+    telephone: "0781273704",
+    location: "Kigali , nyarugenge"
   },
   {
-    id:8,
-    name:"bubu jash",
+    id: 8,
+    name: "bubu jash",
     imgSrc: eight,
-    message:"Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
-    nationality:"Rwandan",
-    telephone:"0781273704",
-    location:"Kigali , nyarugenge"
+    message: "Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
+    nationality: "Rwandan",
+    telephone: "0781273704",
+    location: "Kigali , nyarugenge"
   },
   {
-    id:9,
-    name:"lolo opp",
+    id: 9,
+    name: "lolo opp",
     imgSrc: nine,
-    message:"Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
-    nationality:"Rwandan",
-    telephone:"0781273704",
-    location:"Kigali , nyarugenge"
+    message: "Lost on 12/12 please hb djhbvhjrbjh bjhv rbjkv brjlhkv rhjv rljhvr vlj",
+    nationality: "Rwandan",
+    telephone: "0781273704",
+    location: "Kigali , nyarugenge"
   }
 
 ]

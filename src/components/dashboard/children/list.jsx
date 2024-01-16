@@ -1,21 +1,20 @@
-import { Layout } from 'antd'
-// import { childrenData } from './data'
-import { useNavigate } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
-export default function ListChildren() {
-  const navigate = useNavigate()
+export default function List() {
   const [loading, setLoading] = useState(false)
   const [data, setData] = useState([])
+  const token = localStorage.getItem('token')
+
   async function Listdata() {
     setLoading(true)
     const config = {
       method: 'GET',
       headers: {
         'Content-type': 'application/json',
+        Authorization: `Bearer ${token}`,
       },
     }
-    fetch(`http://localhost:5000/api/v1/children/missing-children`, config)
+    fetch(`http://localhost:5000/api/v1/relative/missing-children`, config)
       .then(async (ree) => {
         setLoading(false)
         if (ree.status === 200) {
@@ -29,21 +28,16 @@ export default function ListChildren() {
       })
   }
 
-  function Navigate(id) {
-    navigate(`/child/${id}`, { state: data })
-  }
-
   useEffect(() => {
     Listdata()
   }, [])
+
   return (
-    <Layout className='bg-white'>
-      <div className='flex justify-center'>
-        <div className='text-3xl text-red-400 font-extrabold'>
-          Missing children
-        </div>
+    <div>
+      <div className='flex justify-center mt-[20px]'>
+        <div className='text-red-400 text-3xl'>My List</div>
       </div>
-      <div className='w-[80%] mx-auto'>
+      <div className='w-[80%] mx-auto mt-[10px]'>
         {loading ? (
           <div className='text-center text-red-400 mt-[10px]'>
             Loading.................
@@ -51,7 +45,7 @@ export default function ListChildren() {
         ) : (
           <div className='flex flex-wrap'>
             {data.length === 0 ? (
-              <div className='text-center text-3xl'>List empty</div>
+              <div>List empty</div>
             ) : (
               <>
                 {data.map((list) => (
@@ -64,7 +58,6 @@ export default function ListChildren() {
                         src={list.imgSrc}
                         alt={list?.name + 'avatar'}
                         className='w-[100%] h-[100%] object-cover rounded-tr-[20%]  rounded-bl-[20%]  hover:cursor-pointer '
-                        onClick={() => Navigate(list.id)}
                       />
                       <div className='absolute bottom-0 left-0 right-0 p-4 font-extrabold text-3xl text-white text-center '>
                         <p className='text-white '>{list.fullName}</p>
@@ -77,6 +70,6 @@ export default function ListChildren() {
           </div>
         )}
       </div>
-    </Layout>
+    </div>
   )
 }

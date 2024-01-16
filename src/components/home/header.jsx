@@ -15,8 +15,18 @@ export default function HomeNav() {
         </span>
       </div>
       <div className='flex flex-row gap-5 items-center'>
-        <p className='text-xl'>Sign up</p>
-        <p className='text-xl'>Login</p>
+        <p
+          className='text-xl hover:cursor-pointer'
+          onClick={() => navigate(`/signup`)}
+        >
+          Sign up
+        </p>
+        <p
+          className='text-xl hover:cursor-pointer text-red-400'
+          onClick={() => navigate(`/login`)}
+        >
+          Login
+        </p>
       </div>
     </header>
   )
