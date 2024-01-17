@@ -1,4 +1,4 @@
-import { Layout } from 'antd'
+import { Layout, notification } from 'antd'
 import { useState } from 'react'
 
 import { useNavigate } from 'react-router-dom'
@@ -12,33 +12,50 @@ export default function Login() {
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
 
+  function validateTelephone(telephone) {
+    const isValid = /^\d{10}$/.test(telephone)
+    return isValid
+  }
+
   async function login(e) {
     e.preventDefault()
-    setLoading(true)
-    const config = {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json',
-      },
-      body: JSON.stringify(state),
-    }
-    fetch(`http://localhost:5000/api/v1/auth/user-login`, config)
-      .then(async (ree) => {
-        setLoading(false)
-        if (ree.status === 200) {
-          const res = await ree.json()
-          localStorage.setItem('token', res?.data?.token)
-          if (res.data.user.role === 'RELATIVE') {
-            navigate('/re/')
-          } else {
-            navigate('/auth/')
+
+    const testing = validateTelephone(state.phone)
+
+    if (testing) {
+      setLoading(true)
+      const config = {
+        method: 'POST',
+        headers: {
+          'Content-type': 'application/json',
+        },
+        body: JSON.stringify(state),
+      }
+      fetch(`http://localhost:5000/api/v1/auth/user-login`, config)
+        .then(async (ree) => {
+          setLoading(false)
+          if (ree.status === 200) {
+            const res = await ree.json()
+            localStorage.setItem('token', res?.data?.token)
+            if (res.data.user.role === 'RELATIVE') {
+              navigate('/re/')
+            } else {
+              navigate('/auth/')
+            }
           }
-        }
+        })
+        .catch((ee) => {
+          console.log({ ee })
+          setLoading(false)
+        })
+    } else {
+      notification.error({
+        placement: 'topRight',
+        message: 'Please enter a valid 10-digit phone number.',
+        duration: 5,
+        key: 'error',
       })
-      .catch((ee) => {
-        console.log({ ee })
-        setLoading(false)
-      })
+    }
   }
 
   return (

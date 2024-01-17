@@ -2931,6 +2931,11 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
+rwanda@^2.1.6:
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/rwanda/-/rwanda-2.1.6.tgz#113ec4375973845a96fc4602864a485a838015e3"
+  integrity sha512-2nRQiH4wtz9MDZSZ0I7418BOiwdYoktqB3DROJm0l70P2TOE1hb2gDFEwIN07lVEIJMikgtJf+tCNQYPmz9vUg==
+
 safe-array-concat@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/safe-array-concat/-/safe-array-concat-1.0.1.tgz#91686a63ce3adbea14d61b14c99572a8ff84754c"
