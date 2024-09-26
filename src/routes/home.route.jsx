@@ -13,7 +13,7 @@ export default function HomeRoutes() {
       <div className='fixed top-0  z-50 w-full'>
         <HomeNav />
       </div>
-      <div className='bg-white mt-[100px]'>
+      <div className='bg-white mt-[150px]'>
         <Routes>
           <Route path='/' element={<ListChildren />} />
           <Route path='/child/:id' element={<OneChild />} />
